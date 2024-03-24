@@ -349,11 +349,9 @@ section {
   flex-direction: column;
   row-gap: 72px;
 }
-.features-item {
-}
 
 .features-icon-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -543,8 +541,6 @@ section {
 
 .footer {
   background: #2e2f42;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -583,10 +579,6 @@ footer > .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-}
-
-.footer-logo-block {
-  /* margin-right: 120px; */
 }
 
 .footer .social-media {
@@ -919,6 +911,10 @@ footer > .container {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
+  }
+
+  .features-icon-container {
+    display: flex;
   }
 
   .features-item {
