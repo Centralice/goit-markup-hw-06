@@ -706,8 +706,7 @@ footer > .container {
   pointer-events: auto;
 }
 
-.modal {
-  /* width: 408px; */
+.modal {  
   width: 288px;
   min-height: 584px;
   background-color: #fcfcfc;
@@ -870,9 +869,9 @@ footer > .container {
 .checkbox-label {
   color: #8e8f99;
   font-size: 12px;
-  /* line-height: 1.17; */
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+  display: flex;
   align-items: center;
 }
 
@@ -883,8 +882,6 @@ footer > .container {
   letter-spacing: 0.04em;
   text-decoration-line: underline;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
 }
 
 .checkbox-span {
@@ -899,12 +896,14 @@ footer > .container {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
 }
 
 .privacy-check:checked + .checkbox-label span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+  display: flex;
 }
 
 .check-icon {
@@ -1046,6 +1045,10 @@ footer > .container {
     display: none;
   }
 
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1140,14 +1143,14 @@ footer > .container {
   }
 
   .address-list {
-  flex-direction: row;
-  gap: 40px;
-}
+    flex-direction: row;
+    gap: 40px;
+  }
 
-.address-link {
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.02em;
-}
+  .address-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
